@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -48,6 +49,8 @@ public class BlankFragment2 extends Fragment {
                 controller.navigate(R.id.action_blankFragment2_to_blankFragment3);
             }
         });
+        TextView textView = view.findViewById(R.id.txt);
+        textView.setText(getArguments().getString("name"));
 
     }
 

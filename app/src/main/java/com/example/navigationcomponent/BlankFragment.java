@@ -29,6 +29,9 @@ public class BlankFragment extends Fragment {
         }
     }
 
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,8 +47,15 @@ public class BlankFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Bundle bundle = new Bundle();
+                bundle.putString("name","Hritik");
+
                 NavController controller= Navigation.findNavController(getActivity(),R.id.nav_host_fragment);
-                controller.navigate(R.id.action_blankFragment_to_blankFragment2);
+                controller.navigate(R.id.action_blankFragment_to_blankFragment2,bundle);
+
+
+
             }
         });
 

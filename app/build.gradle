@@ -32,3 +32,5 @@ dependencies {
     // For Kotlin use navigation-fragment-ktx
     implementation "android.arch.navigation:navigation-ui:$nav_version"
 }
+apply plugin: "androidx.navigation.safeargs"
+
